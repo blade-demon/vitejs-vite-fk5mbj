@@ -1,14 +1,20 @@
-function App() {
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+
+export function App() {
   return (
-    <div className="App">
-      <input
-        id="dinosaur_name"
-        name="dinosaur_name"
-        aria-activedescendant="dinosaur_name_info"
-        type="text"
-      />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   )
 }
 
-export default App
+export function WrappedApp() {
+  return (
+    <HashRouter>
+      <App />
+    </HashRouter>
+  )
+}
