@@ -1,20 +1,17 @@
-import { HashRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
-
 export function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  )
+    <video controls width="450">
+      <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+      <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+      Download the
+      <a href="/media/cc0-videos/flower.webm">WEBM</a>
+      or
+      <a href="/media/cc0-videos/flower.mp4">MP4</a>
+      video.
+    </video>
+  );
 }
 
 export function WrappedApp() {
-  return (
-    <HashRouter>
-      <App />
-    </HashRouter>
-  )
+  return <App />;
 }

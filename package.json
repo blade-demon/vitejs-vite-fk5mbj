@@ -11,30 +11,21 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
     "@vitejs/plugin-react": "^3.0.0",
     "eslint": "^8.30.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "jsdom": "^20.0.3",
-    "prettier": "^2.8.1",
+    "install-peerdeps": "*",
     "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "vitest": "^0.26.2"
+    "vite": "^4.0.0"
+  },
+  "peerDependencies": {
+    "install-peerdeps": "^3.0.3"
   }
 }
